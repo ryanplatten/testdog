@@ -1,0 +1,129 @@
+/* Import a Google Font for the page */
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+/* Styling for unvisited links */
+a:link {
+    color: black; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styling for visited links */
+a:visited {
+    color: black; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styling for links on hover */
+a:hover {
+    color: rgb(219, 226, 226); /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Styling for the menu container */
+.menu {
+    background-color: darkorange; /* Background color */
+    border: 5px; /* Border size */
+    text-align: center; /* Center text */
+    width: 80dvw; /* 80% of the viewport width */
+    margin: auto; /* Center horizontally */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Hide overflow content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between site name and menu icons */
+    align-items: center; /* Center vertically */
+}
+
+/* Styling for the site name */
+.site-name {
+    font-family: 'Love Ya Like A Sister', cursive; /* Font family with Google Font */
+    font-size: 30px; /* Font size */
+    margin: 0; /* Remove margin */
+    padding: 0.5rem; /* Add padding for spacing */
+    line-height: 1; /* Adjust line height */
+}
+
+/* Styling for the menu icons */
+.menu-icons {
+    display: inline-block; /* Display as inline block */
+    overflow: hidden; /* Hide overflow content */
+    padding: 0.5rem; /* Add padding */
+}
+
+/* Styling for material icons */
+.material-icons {
+    font-size: 48px; /* Font size */
+   
+}
+
+/* Styling for the body/container */
+#body {
+    background-color: white; /* Background color */
+    width: 80dvw; /* 80% of the viewport width */
+    margin: auto; /* Center horizontally */
+    height: calc(100vh - 150px); /* 100% of viewport height minus 50px for the menu bar */
+    display: flex; /* Use flexbox for layout */
+}
+
+#firstparacontainer {
+    display: flex;
+}
+
+/* Styling for the body element */
+body {
+    background-color: rgb(225, 225, 225); /* Background color for the entire page */
+}
+
+/* Styling for an image with the ID 'dog_img' */
+#dog_img {
+    width: 300px; /* Width as a percentage of its container */
+    max-height: 300px; /* Maintain aspect ratio */
+    border-radius: 200px; /* Rounded corners */
+    border: 2px solid black; /* Add border */
+    margin: 20px; /* Add margin */
+}
+
+#main-text {
+    width: 60%; /* Width as a percentage of its container */
+    margin: 20px; /* Add margin */
+}
+
+#main-text h1{
+    font-family: Arial, Helvetica, sans-serif;  /* Font family */
+}
+
+/* Styling for paragraph elements */
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+}
+
+/* Styling for buttons */
+button {
+    background-color: gray; /* Button background color */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove borders */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Styling for an element with the ID 'info-box' */
+#info-box {
+    border-radius: 10px; /* Rounded corners */
+    background-color: lightgray; /* Background color */
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;  /* Font family */
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;  /* Font family */
+}
+
+#secondpara {
+    font-family: Arial, Helvetica, sans-serif;
+
+}

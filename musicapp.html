@@ -1,0 +1,179 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      outline: none;
+    }
+
+    .search-bar button {
+      background-color: #ccc;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .volume-control {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    .volume-control input {
+      width: 100px;
+    }
+
+    .profile-icon {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .profile-icon img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .album-cover {
+      width: 100%;
+      height: 300px;
+      background-image: url('data:image/jpeg;base64,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');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .play-button {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .play-button img {
+      width :40px; 
+       height :40px; 
+       margin-left :20px; 
+       margin-top :20px; 
+     }
+    
+     .song-info {
+       display :flex; 
+       flex-direction :column; 
+       align-items :center; 
+       margin-top :20px; 
+     }
+    
+     .song-title {
+       font-size :24px; 
+       font-weight :bold; 
+     }
+    
+     .song-artist {
+       font-size :18px; 
+       color :#666; 
+     }
+    
+     .playlist {
+       display :grid; 
+       grid-template-columns :repeat(3,1fr); 
+       grid-gap :10px; 
+       margin-top :20px; 
+     }
+    
+     .playlist-item {
+       width :100%; 
+       height :100%; 
+       background-color :#ccc; 
+       display :flex; 
+       align-items :center; 
+       justify-content :center; 
+       font-size :18px; 
+       font-weight :bold; 
+       color :#333; 
+     }
+    
+     /* Changed the background colors of the following elements */
+     .container {
+       background-color :#f0f0f0; /* light gray */
+     }
+    
+     .search-bar button {
+       background-color :#ff69b4; /* hot pink */
+     }
+    
+     .play-button {
+       background-color :#ff69b4; /* hot pink */
+     }
+    
+     .bottom-nav img {
+       filter :invert(100%); /* white icons */
+       width: 40px;
+     }
+    
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <div class="search-bar">
+       <input type="text" placeholder="Search music...">
+       <button>Search</button>
+     </div>
+     <div class="volume-control">
+       <label for="volume">Volume:</label>
+       <input type="range" id="volume" min="0" max="100" value="50">
+     </div>
+     <div class="profile-icon">
+       <img src="https://img.icons8.com/ios/452/user-male-circle.png" alt="Profile picture">
+     </div>
+     <div class="album-cover">
+       <div class="play-button">
+         <img src="https://img.icons8.com/ios-filled/452/play.png" alt="Play icon">
+       </div>
+     </div>
+     <div class="song-info">
+       <p class="song-title">Cruel Summer</p>
+       <p class="song-artist">Taylor Swift</p>
+     </div>
+     <div class="playlist">
+       <div class="playlist-item">1</div>
+       <div class="playlist-item">2</div>
+       <div class="playlist-item">3</div>
+       <div class="playlist-item">4</div>
+       <div class="playlist-item">5</div>
+       <div class="playlist-item">6</div>
+     </div>
+     <div class="bottom-nav">
+       <img src="https://img.icons8.com/ios-filled/452/home.png" alt="Home icon">
+       <img src="https://img.icons8.com/ios-filled/452/settings.png" alt="Settings icon">
+     </div>
+   </div>
+ </body>
+</html>
